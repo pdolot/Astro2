@@ -72,7 +72,13 @@ public class ForecastTab extends CoreTab {
         weatherData.setLayoutManager(new LinearLayoutManager(context));
         weatherData.setAdapter(weatherInfoAdapter);
 
-        daysRecyclerView.setLayoutManager(new GridLayoutManager(context, forecast == null ? 1 : forecast.size()));
+        int spanCount = 1;
+
+        if (forecast != null && forecast.size() > 0){
+            spanCount = forecast.size();
+        }
+
+        daysRecyclerView.setLayoutManager(new GridLayoutManager(context, spanCount));
         daysRecyclerView.setAdapter(dayAdapter);
         if (forecast != null)
             dayAdapter.setData(getDays());
