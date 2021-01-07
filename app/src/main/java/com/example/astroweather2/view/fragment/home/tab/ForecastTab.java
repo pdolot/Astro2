@@ -86,7 +86,7 @@ public class ForecastTab extends CoreTab {
             bindData(forecast.get(position), context);
         });
 
-        if (forecast != null)
+        if (forecast != null && forecast.size() > 0)
             bindData(forecast.get(0), context);
     }
 
