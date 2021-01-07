@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AstroWeather2</string>
+    <string name="temperature">%1$.2f %2$s</string>
+    <string name="temperatureDay">%1$.2f %5$s | %2$.2f %5$s | %3$.2f %5$s | %4$.2f %5$s</string>
+    <string name="speed">%1$.2f %2$s</string>
+    <string name="doubleFormat">%1$.5f</string>
+    <string name="integerFormat">%1$d</string>
+    <string name="updateDate">Zaktualizowano: %1$s</string>
+
+</resources>
